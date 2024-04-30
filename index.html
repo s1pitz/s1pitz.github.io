@@ -1,1 +1,149 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core Reengineering Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <h3 class="title"><i class="bx bxs-quote-alt-left"></i> The Couplers <i class="bx bxs-quote-alt-right"></i></h3>
+      <nav>
+        <ul class="navbar_link">
+          <li><a href="#portofolio">Home</a></li>
+          <li><a href="#about">Types</a></li>
+          <li><a href="#contact_page">Examples</a></li>
+        </ul>
+      </nav>
+      <button id="contact">Contact</button>
+    </header>
+
+    <!-- landing page / home -->
+    <section id="portofolio">
+        <div class="container">
+        <div class="texthome">
+            <h1>The Couplers</h1>
+            <h3>Apa yang dimaksud dengan " The Couplers " ? <br></h3>
+            <p>
+                <br>
+                Adalah suatu kategori bad smell code yang merujuk pada code yang memiliki ketergantungan yang tinggi antara satu dengan yang lainnya. 
+                Ketergantungan yang erat ini dapat membuat code menjadi kaku, sulit untuk dipelihara, dan sulit untuk diubah. Ada 4 macam tipe the couplers, yang akan dijelaskan di website ini.<br>
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Types -->
+    <section id="about">
+        <div class="container2">
+            <div class="description" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <div class="column">
+                <h1>Feature Envy</h1>
+                <p>
+                  Suatu method lebih banyak mengakses data dari objek lain daripada data diri sendiri. <br><br>
+                  Solusi : memindahkan method ke class yang datanya digunakan.
+                </p>
+            </div>
+            <div class="column">
+                <h1>Inappropriate Intimacy</h1>
+                <p>
+                  Satu class menggunakan internal fields dan methods dari class lain. <br><br>
+                  Solusi : mengubah method pada class tersebut.
+                </p>
+            </div>
+            <div class="column">
+                <h1>Message Chain</h1>
+                <p>
+                    Terjadi series of calls yang seperti $a -&gt; b() -&gt; c() -&gt; d(). <br><br>
+                    Solusi : membuat sebuah method untuk mengurangi message chain.
+                </p>
+            </div>
+            <div class="column">
+                <h1>Middle Man</h1>
+                <p>
+                  Sebuah method yang tugasnya hanya memanggil method lain (entah dalam class sendiri atau milik class lain). <br><br>
+                  Solusi : Menghapus method tersebut dan user langsung memanggil method yang diinginkan.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- examples -->
+    <section id="gallery">
+      <div class="galleries">
+        <div class="textgallery">
+          <h1>Examples</h1>
+        </div>
+        <!-- <div class="slider-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="images/1.jpg" alt="slide-1" />
+              <img id="slide-2" src="images/2.jpg" alt="slide-2" />
+              <img id="slide-3" src="images/3.jpg" alt="slide-3" />
+              <img id="slide-4" src="images/4.jpg" alt="slide-4" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+          </div>
+        </div> -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="images/beforeFE.png" alt="slide-1" />
+              <img id="slide-2" src="images/afterFE.png" alt="slide-2" />
+              <img id="slide-3" src="images/beforeII.png" alt="slide-3" />
+              <img id="slide-4" src="images/afterII.png" alt="slide-4" />
+              <img id="slide-5" src="images/beforeMC.png" alt="slide-5" />
+              <img id="slide-6" src="images/afterMC.png" alt="slide-6" />
+              <img id="slide-7" src="images/beforeMM.png" alt="slide-7" />
+              <img id="slide-8" src="images/afterMM.png" alt="slide-8" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+              <a href="#slide-6"></a>
+              <a href="#slide-7"></a>
+              <a href="#slide-8"></a>
+          </div>
+        </div>
+      </div>
+        <div class="description2">
+          <p>
+            Press the carousel button to see the examples of the couplers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+        <!-- contact page -->
+    <section id="contact_page">
+      <div class="footer">
+        <!-- BEGIN: ed8c6549bwf9 -->
+        <p class="footer_text">Made by Maleo Farrel &amp; Richard Arhur of LE01</p>
+        <!-- END: ed8c6549bwf9 -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
